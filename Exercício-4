@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        var diaDeSemana = ["Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado", "Domingo"];
+        var dias = [];
+        let resultado = 0;
+
+        for (var i = 0; i < 7; i++) {
+            var litrosPorDia = parseInt(prompt("Insira o consumo de água em litros de " + diaDeSemana[i] + "-Feira: "));
+            dias.push(litrosPorDia);
+        };
+
+        // Teste para saber se os valores estão sendo atribuidos ao array.
+        // alert(dias)
+
+        for (var j = 0; j < dias.length; j++) {
+            resultado += dias[j];
+        }
+
+        alert("O consumo total de água nesta semana foi de " + resultado);
+
+    </script>
+</body>
+</html>
